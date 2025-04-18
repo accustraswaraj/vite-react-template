@@ -11,6 +11,6 @@
   "assets": {
     "not_found_handling": "single-page-application",
     "run_worker_first": false,
-    "not_found_handling": "404-page"
+    "exclude_paths": ["/lite/*"]
   }
 }
