@@ -1,9 +1,5 @@
 import { Hono } from "hono";
-const app = new Hono<{ Bindings: Env }>();
-
-
-// Set the base path
-app.basePath('/base')
+const app = new Hono<{ Bindings: Env }>().basePath('/lite');
 
 app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
 
